@@ -1,18 +1,144 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, 
-        initial-scale=1.0">
-        <title>Bullying na escola</title>
-    </head>
-    <body>
-        
-        </h1>Bullying na Escola</h1>
-       <p> Este site tem como objetivo,incentivar a diminuição do Bullying,
-        a diminuição do Bullying exige ações práticas focadas na empatia, 
-        no diálogo aberto e na união entre escola e família.</p>
-        o combate efetivo envolve escutar os jovens,
-        criar regras claras e apoiar quem precisa.</p>
-    </body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Segura | Prevenção e Combate ao Bullying</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra de Acessibilidade -->
+    <div class="top-accessibility" aria-label="Barra de Acessibilidade">
+        <div class="container accessibility-content">
+            <span>Acessibilidade:</span>
+            <button id="btn-increase-font" title="Aumentar fonte">A+</button>
+            <button id="btn-decrease-font" title="Diminuir fonte">A-</button>
+            <button id="btn-toggle-contrast" title="Alternar Alto Contraste">Alto Contraste</button>
+        </div>
+    </div>
+
+    <!-- Navegação / Cabeçalho -->
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="#" class="logo">Escola<span>Segura</span></a>
+            <nav class="nav-tabs" aria-label="Navegação Principal">
+                <button class="tab-btn active" data-tab="tab-inicio">Início</button>
+                <button class="tab-btn" data-tab="tab-sobre">O que é Bullying?</button>
+                <button class="tab-btn" data-tab="tab-sinais">Sinais e Tipos</button>
+                <button class="tab-btn" data-tab="tab-acoes">Ações e Prevenção</button>
+                <button class="tab-btn" data-tab="tab-faq">Dúvidas Frequentes</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo em Abas -->
+    <main class="container main-content">
+
+        <!-- Aba 1: Início (Hero / Ação Principal) -->
+        <section id="tab-inicio" class="tab-content active">
+            <div class="hero">
+                <div class="hero-text">
+                    <span class="badge">Ambiente Escolar Saudável</span>
+                    <h1>Transforme sua escola em um lugar seguro e acolhedor</h1>
+                    <p>O programa Escola Segura oferece estratégias comprovadas para combater o bullying, promover a empatia e fortalecer a comunidade escolar.</p>
+                    <a href="#tab-acoes" class="btn btn-primary btn-tab-trigger" data-target="tab-acoes">Saiba Como Agir</a>
+                </div>
+                <div class="hero-card">
+                    <h3>Impacto Real</h3>
+                    <div class="stat-item">
+                        <span class="stat-num">+85%</span>
+                        <span class="stat-desc">Redução de incidentes nas escolas participantes</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">100%</span>
+                        <span class="stat-desc">Foco em conscientização e apoio emocional</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aba 2: O que é Bullying? -->
+        <section id="tab-sobre" class="tab-content">
+            <h2>Compreendendo o Bullying</h2>
+            <p class="section-subtitle">O primeiro passo para o combate é a informação precisa.</p>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>O que caracteriza?</h3>
+                    <p>Bullying é todo ato de violência física ou psicológica, intencional e repetitivo, praticado sem motivação evidente por um ou mais indivíduos contra uma ou mais pessoas.</p>
+                </div>
+                <div class="card">
+                    <h3>Consequências</h3>
+                    <p>Pode causar queda no rendimento escolar, isolamento social, ansiedade, depressão e danos emocionais de longo prazo no desenvolvimento dos estudantes.</p>
+                </div>
+                <div class="card">
+                    <h3>O Papel da Comunidade</h3>
+                    <p>Pais, professores e alunos devem atuar em conjunto. Ignorar o problema perpetua o ciclo de violência no ambiente de aprendizagem.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aba 3: Sinais e Tipos (Com Carrossel Dinâmico) -->
+        <section id="tab-sinais" class="tab-content">
+            <h2>Tipos de Bullying e Sinais de Alerta</h2>
+            <p class="section-subtitle">Identifique rapidamente os comportamentos para intervir a tempo.</p>
+
+            <div class="carousel-container">
+                <div class="carousel-track" id="carousel-track">
+                    <!-- Gerado via JavaScript -->
+                </div>
+                <div class="carousel-controls">
+                    <button id="prev-slide" class="btn-carousel">&larr; Anterior</button>
+                    <button id="next-slide" class="btn-carousel">Próximo &rarr;</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aba 4: Ações e Prevenção -->
+        <section id="tab-acoes" class="tab-content">
+            <h2>Plano de Ação para a Comunidade Escolar</h2>
+            <p class="section-subtitle">Passos práticos para gerar impacto e proteção contínua.</p>
+
+            <div class="cards-grid">
+                <div class="card card-highlight">
+                    <h3>Para Alunos</h3>
+                    <p>Não se cale. Se você presenciar ou sofrer bullying, procure um adulto de confiança, um professor ou a coordenação imediata da escola.</p>
+                </div>
+                <div class="card card-highlight">
+                    <h3>Para Educadores</h3>
+                    <p>Promova debates periódicos, crie canais seguros e anônimos de denúncia e mantenha uma postura atenta às mudanças de comportamento na sala de aula.</p>
+                </div>
+                <div class="card card-highlight">
+                    <h3>Para os Pais</h3>
+                    <p>Mantenha um diálogo aberto com seus filhos. Observe alterações bruscas de humor, queda no rendimento e resistência para ir à escola.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aba 5: FAQ (Acordeão Dinâmico) -->
+        <section id="tab-faq" class="tab-content">
+            <h2>Perguntas Frequentes</h2>
+            <p class="section-subtitle">Respostas para as principais dúvidas sobre prevenção e direitos.</p>
+
+            <div class="accordion" id="accordion-container">
+                <!-- Gerado via JavaScript -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Escola Segura - Programa de Conscientização e Prevenção ao Bullying.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
